@@ -1,14 +1,27 @@
 # QEMU
-we have already put some function hooks to help implementing two indirect branch handling mechanisms: a **shadow stack** and an **indirect branch target cache(IBTC)**.
+In this project, we have implemented two indirect branch handling mechanisms: a **shadow stack** and an **indirect branch target cache(IBTC)** in QEMU full-system emulator to improve indirect branch performance.
 
 ## IBTC
-Indirect branch target cache works similar to hardware cache, but it stores the address of the related code fragment stored in the code cache. Each time a cache lookup succeeds, the indirect branch can directly branch to the target address but not the emulation engine.
+Indirect branch target cache works similar to hardware cache, but it stores the address of the related code fragment stored in the **code cache**.
+
+Each time a cache lookup succeeds, the indirect branch can directly branch to the target address but not the emulation engine.
 
 The following picture shows how IBTC works.
-![image](https://github.com/a110605/qemu/blob/master/picture/1.png)
+
+![image](https://github.com/a110605/qemu/blob/master/pictures/1.png)
  
 ## Shadow Stack
+A shadow stack is used to accelerate searching branch targets when current instruction is a **return instruction**.
+
+The address of the translation block corresponding to next instruction of the function call is pushed on the shadow stack while the function call is executed.
+
+When the callee returns, the top of the shadow stack is popped, and the popped address is the translation block of the return address.
+
+The following picture shows how shadow stack works.
+
+![image](https://github.com/a110605/qemu/blob/master/pictures/2.png)
  
+
 ## Quick Start
 	# git clone https://github.com/a110605/qemu.git
 	# cd qemu
