@@ -8,7 +8,7 @@ Each time a cache lookup succeeds, the indirect branch can directly branch to th
 
 The following picture shows how IBTC works.
 
-![image](https://github.com/a110605/qemu/blob/master/pictures/1.png)
+ <img src="https://github.com/a110605/qemu/blob/master/pictures/1.png" width="70%" height="70%">
  
 ## Shadow Stack
 A shadow stack is used to accelerate searching branch targets when current instruction is a **return instruction**.
@@ -19,8 +19,7 @@ When the callee returns, the top of the shadow stack is popped, and the popped a
 
 The following picture shows how shadow stack works.
 
-![image](https://github.com/a110605/qemu/blob/master/pictures/2.png)
- 
+ <img src="https://github.com/a110605/qemu/blob/master/pictures/2.png" width="70%" height="70%">
 
 ## Quick Start
 	# git clone https://github.com/a110605/qemu.git
@@ -28,9 +27,14 @@ The following picture shows how shadow stack works.
 	# ./configure --target-list=i386-linux-user
 	The qemu executable is located at i386-linux-user/qemu-i386 after make
 	# make
+## Performance Experiments
+<img src="https://github.com/a110605/qemu/blob/master/pictures/3.png" width="70%" height="70%">
 
+<img src="https://github.com/a110605/qemu/blob/master/pictures/4.png" width="70%" height="70%">
+
+<img src="https://github.com/a110605/qemu/blob/master/pictures/5.png" width="70%" height="70%">
 ## Resources
-The optimazation functions are inplemented in [qemu_dir]/optimization.c. 
+The optimization functions are inplemented in [qemu_dir]/optimization.c. 
 
 For more details information, please refer the following documents
 
