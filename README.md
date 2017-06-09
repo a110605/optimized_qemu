@@ -19,8 +19,8 @@ When the callee returns, the top of the shadow stack is popped, and the popped a
 
 The following picture shows how shadow stack works.
 
-![image](https://github.com/a110605/qemu/blob/master/pictures/2.png =100x100)
- 
+![image](https://github.com/a110605/qemu/blob/master/pictures/2.png)
+ <img src="https://github.com/a110605/qemu/blob/master/pictures/2.png" width="50%" height="50%">
 
 ## Quick Start
 	# git clone https://github.com/a110605/qemu.git
