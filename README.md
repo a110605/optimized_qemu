@@ -19,7 +19,7 @@ When the callee returns, the top of the shadow stack is popped, and the popped a
 
 The following picture shows how shadow stack works.
 
-![image](https://github.com/a110605/qemu/blob/master/pictures/2.png)
+![image](https://github.com/a110605/qemu/blob/master/pictures/2.png =100x100)
  
 
 ## Quick Start
@@ -30,7 +30,7 @@ The following picture shows how shadow stack works.
 	# make
 
 ## Resources
-The optimazation functions are inplemented in [qemu_dir]/optimization.c. 
+The optimization functions are inplemented in [qemu_dir]/optimization.c. 
 
 For more details information, please refer the following documents
 
