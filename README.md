@@ -27,7 +27,12 @@ The following picture shows how shadow stack works.
 	# ./configure --target-list=i386-linux-user
 	The qemu executable is located at i386-linux-user/qemu-i386 after make
 	# make
+## Performance Experiments
+<img src="https://github.com/a110605/qemu/blob/master/pictures/3.png" width="70%" height="70%">
 
+<img src="https://github.com/a110605/qemu/blob/master/pictures/4.png" width="70%" height="70%">
+
+<img src="https://github.com/a110605/qemu/blob/master/pictures/5.png" width="70%" height="70%">
 ## Resources
 The optimization functions are inplemented in [qemu_dir]/optimization.c. 
 
