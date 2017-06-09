@@ -1,0 +1,1 @@
+init_optimizations is correctly executedibtc_init is correctly executed
