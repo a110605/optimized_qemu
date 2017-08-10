@@ -1,7 +1,7 @@
 # QEMU
 In this project, we have implemented two indirect branch handling mechanisms: a **shadow stack** and an **indirect branch target cache(IBTC)** in QEMU full-system emulator to improve indirect branch performance.
 
-## IBTC
+## Indirect Branch Target Cache 
 Indirect branch target cache works similar to hardware cache, but it stores the address of the related code fragment stored in the **code cache**.
 
 Each time a cache lookup succeeds, the indirect branch can directly branch to the target address but not the emulation engine.
@@ -43,4 +43,4 @@ The optimization functions are inplemented in [qemu_dir]/optimization.c.
 
 For more details information, please refer the following documents
 
-[VM_Homework 1 Report](https://www.dropbox.com/s/6kyfqhldz7fx2k0/VM_HW1_R03725019%E6%9D%8E%E5%A3%AB%E6%9A%84_R03725037%E6%9D%8E%E5%A5%95%E5%BE%B7_report.pdf?dl=0)
+- [VM_Homework 1 Report](https://www.dropbox.com/s/6kyfqhldz7fx2k0/VM_HW1_R03725019%E6%9D%8E%E5%A3%AB%E6%9A%84_R03725037%E6%9D%8E%E5%A5%95%E5%BE%B7_report.pdf?dl=0)
