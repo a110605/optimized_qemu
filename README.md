@@ -8,7 +8,7 @@ Each time a cache lookup succeeds, the indirect branch can directly branch to th
 
 The following picture shows how IBTC works.
 
- <img src=" https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/1.png" width="70%" height="70%">
+ <img src="https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/1.png" width="70%" height="70%">
 
 ## Shadow Stack
 A shadow stack is used to accelerate searching branch targets when current instruction is a **return instruction**.
@@ -19,15 +19,15 @@ When the callee returns, the top of the shadow stack is popped, and the popped a
 
 The following picture shows how shadow stack works.
 
- <img src=" https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/2.png" width="70%" height="70%">
+ <img src="https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/2.png" width="70%" height="70%">
 
 
 ## Performance Experiments
-<img src=" https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/3.png" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/3.png" width="50%" height="50%">
 
-<img src=" https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/4.png" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/4.png" width="50%" height="50%">
 
-<img src=" https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/5.png" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/a110605/optimized-qemu/master/pictures/5.png" width="50%" height="50%">
 
 
 ## Quick Start
