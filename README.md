@@ -23,11 +23,11 @@ The following picture shows how shadow stack works.
 
 
 ## Performance Experiments
-<img src="https://i.imgur.com/JEbcKOL.png" width="50%" height="50%">
+<img src="https://i.imgur.com/JEbcKOL.png" width="60%" height="60%">
 
-<img src="https://i.imgur.com/EjzQlwj.png" width="50%" height="50%">
+<img src="https://i.imgur.com/EjzQlwj.png" width="60%" height="60%">
 
-<img src="https://i.imgur.com/TbjCBxk.png" width="50%" height="50%">
+<img src="https://i.imgur.com/TbjCBxk.png" width="60%" height="60%">
 
 
 ## Quick Start
